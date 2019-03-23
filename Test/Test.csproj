@@ -49,5 +49,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business Layer\Business Layer.csproj">
+      <Project>{10098f7d-e3ac-41b2-b1ec-c1ab9285ebf8}</Project>
+      <Name>Business Layer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{1324ea1c-75cc-4845-9700-c5efbf975ff1}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data Layer\Data Layer.csproj">
+      <Project>{dfca3436-189e-4615-808a-fc839dba3b6c}</Project>
+      <Name>Data Layer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Presentation Layer\Presentation Layer.csproj">
+      <Project>{3a539b4a-7592-4fed-b27e-c6ca25154bad}</Project>
+      <Name>Presentation Layer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

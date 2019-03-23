@@ -54,6 +54,13 @@
       <Project>{1324ea1c-75cc-4845-9700-c5efbf975ff1}</Project>
       <Name>Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Data Layer\Data Layer.csproj">
+      <Project>{dfca3436-189e-4615-808a-fc839dba3b6c}</Project>
+      <Name>Data Layer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

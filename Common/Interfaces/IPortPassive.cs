@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Common.Interfaces
 {
-    public interface IPortPassive : IPortActive
+    public interface IPortPassive : IPort
     {
         /// <summary>
         /// TypeName has to be unique,

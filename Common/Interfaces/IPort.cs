@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Common.Interfaces
 {
-    public interface IPortActive
+    public interface IPort
     {
         int ID { get;}
 

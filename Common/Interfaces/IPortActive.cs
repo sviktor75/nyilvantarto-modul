@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Common.Interfaces
 {
-    public interface IPortActive : IPortActive
+    public interface IPortActive : IPort
     {
         string Layer2Address  {get; set; }
 

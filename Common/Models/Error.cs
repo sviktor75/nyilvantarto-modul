@@ -7,7 +7,7 @@ using Common.Interfaces;
 
 namespace Common.Models
 {
-    internal class Error : IError
+    public class Error : IError
     {
         string message;
         ErrorType errorType;

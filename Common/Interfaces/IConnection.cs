@@ -8,10 +8,13 @@ namespace Common.Interfaces
 {
     public interface IConnection
     {
-         int ID { get;}
+        int ID { get;}
 
         string Name { get; set;}
 
+        int DestinationItemID { get; set; }
+
+        int DestinationPortID { get; set; }
 
     }
 }

@@ -23,8 +23,6 @@ namespace Common.Interfaces
 
         bool IsError {get; set;}
 
-        
-
         IList<IConnection> GetConnectionsList();
 
         IError AddConnection(IConnection connection);

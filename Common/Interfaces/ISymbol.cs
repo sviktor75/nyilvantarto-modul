@@ -9,8 +9,8 @@ namespace Common.Interfaces
 {
     public interface ISymbol
     {
-        string Name {get; }
+        string Name { get; set; }
 
-        Image Image {get; }
+        Image Image { get; set; }
     }
 }

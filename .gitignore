@@ -38,3 +38,10 @@ Test/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
 Test/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
 Test/obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
 Business Layer/obj/Debug/build.force
+Data Layer/obj/Debug/build.force
+packages/dotConnect.Express.for.MySQL.8.12.1328/.signature.p7s
+packages/dotConnect.Express.for.MySQL.8.12.1328/content/app.config.transform
+packages/dotConnect.Express.for.MySQL.8.12.1328/content/web.config.transform
+packages/dotConnect.Express.for.MySQL.8.12.1328/dotConnect.Express.for.MySQL.8.12.1328.nupkg
+packages/dotConnect.Express.for.MySQL.8.12.1328/lib/Devart.Data.dll
+packages/dotConnect.Express.for.MySQL.8.12.1328/lib/Devart.Data.MySql.dll

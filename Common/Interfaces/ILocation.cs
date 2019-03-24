@@ -21,7 +21,7 @@ namespace Common.Interfaces
 
         ILocation Parent {get; set;}
 
-        ISymbol Sign { get; }
+        ISymbol Sign { get; set; }
 
         string Description {get; set;}
 

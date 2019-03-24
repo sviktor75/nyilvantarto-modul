@@ -12,6 +12,6 @@ namespace Common.Interfaces
         /// TypeName has to be unique,
         /// because it is index of PortTypePassive class
         /// </summary>
-        string PassiveTypeName {get; }
+        string PassiveTypeName { get; }
     }
 }

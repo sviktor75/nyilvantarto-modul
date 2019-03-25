@@ -50,6 +50,7 @@
     <Compile Include="Interfaces\IRegisterPassive.cs" />
     <Compile Include="Interfaces\IRegisterPortActive.cs" />
     <Compile Include="Interfaces\IRegisterPortPassive.cs" />
+    <Compile Include="Interfaces\IRegisterSymbol.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

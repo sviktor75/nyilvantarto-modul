@@ -13,9 +13,9 @@ namespace Common.Interfaces
 
         string Name {get; set;}
         
-        ILocation Where  {get; set;}
-        
-        ISymbol Sign { get; set;}
+        int LocationID  {get; set;}
+
+        int SymbolID { get; set; }
 
         string Remarks {get; set;}
 

@@ -19,9 +19,9 @@ namespace Common.Interfaces
         /// </summary>
         string LocationTypeName { get; }
 
-        ILocation Parent {get; set;}
+        int ParentID {get; set;}
 
-        ISymbol Sign { get; set; }
+        int SymbolID { get; set; }
 
         string Description {get; set;}
 

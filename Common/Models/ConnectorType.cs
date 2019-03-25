@@ -19,6 +19,13 @@ namespace Common.Models
             }
         }
 
+        public int Length => manufacturer.Count;
+
+        public KeyValuePair<string,string>[] ToArray()
+        {
+            return manufacturer.ToArray();
+        }
+
         IError AddPortType(string connectorTypeName, string manufacturerName)
         {
             string item;

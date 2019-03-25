@@ -11,12 +11,19 @@ namespace Common.Models
     {
         private HashSet<string> portName = new HashSet<string>();
 
-        public string this[string name]
+        public int Length => portName.Count;
+
+        public HashSet<string> Name
         {
             get
             {
-                return portName.Where(item => item == name).FirstOrDefault();
+                return portName;
             }
+        }
+
+        public string[] ToArray()
+        {
+            return portName.ToArray();
         }
 
         IError AddPortType(string portTypeName)

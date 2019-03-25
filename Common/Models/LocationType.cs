@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,15 +12,22 @@ namespace Common.Models
     {
         private HashSet<string> locationName = new HashSet<string>();
 
-        public string this[string name]
+        public int Length => locationName.Count;
+
+        public HashSet<string> Name
         {
             get
             {
-                return locationName.Where(item => item == name).FirstOrDefault();
+                return locationName;
             }
         }
 
-        IError AddLocationType(string locationTypeName)
+        public string[] ToArray()
+        {
+            return locationName.ToArray();
+        }
+
+        public IError AddLocationType(string locationTypeName)
         {
             
             if (locationName.Contains(locationTypeName))
@@ -34,7 +42,7 @@ namespace Common.Models
             }
         }
 
-        IError RemoveLocationType(string locationTypeName)
+        public IError RemoveLocationType(string locationTypeName)
         {
 
             if (locationName.Contains(locationTypeName))

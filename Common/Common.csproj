@@ -45,9 +45,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helpers.cs" />
+    <Compile Include="IDGenerator.cs" />
     <Compile Include="Interfaces\IConnection.cs" />
     <Compile Include="Interfaces\IConnectorWall.cs" />
     <Compile Include="Interfaces\IError.cs" />
+    <Compile Include="Interfaces\IIDGenerator.cs" />
     <Compile Include="Interfaces\IItem.cs" />
     <Compile Include="Interfaces\IItemActive.cs" />
     <Compile Include="Interfaces\IItemPassive.cs" />

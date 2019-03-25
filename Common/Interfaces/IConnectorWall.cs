@@ -12,7 +12,7 @@ namespace Common.Interfaces
 
         string Name { get; set;}
 
-        ILocation Where { get; set; }
+        int LocationID { get; set; }
 
         int Number { get; set;}
 
@@ -34,8 +34,8 @@ namespace Common.Interfaces
 
         ConnectorType Type { get; set;}
 
-        ILocation ParentLocation { get; set;}
+        int ParentLocationID { get; set;}
 
-        ISymbol Sign { get; set;}
+        int SymbolID { get; set;}
     }
 }

@@ -19,6 +19,5 @@ namespace Common.Interfaces
         /// than it is empty
         /// </summary>
         bool IsEmpty { get; set;}
-
     }
 }

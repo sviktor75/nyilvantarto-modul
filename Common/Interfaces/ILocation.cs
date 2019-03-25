@@ -27,7 +27,11 @@ namespace Common.Interfaces
 
         string Remarks {get; set;}
 
-        IList<ILocation> GetChildList();
+        /// <summary>
+        /// Get the list of IDs of Location childs
+        /// </summary>
+        /// <returns></returns>
+        IList<int> GetChildIDList();
 
         IError AddChild(ILocation child);
 

@@ -23,7 +23,11 @@ namespace Common.Interfaces
 
         bool IsError {get; set;}
 
-        IList<IConnection> GetConnectionsList();
+        /// <summary>
+        /// Get the list of the IDs of connections
+        /// </summary>
+        /// <returns></returns>
+        IList<int> GetConnectionsIDList();
 
         IError AddConnection(IConnection connection);
 

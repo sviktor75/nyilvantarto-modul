@@ -44,9 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\IRegisterActive.cs" />
+    <Compile Include="Interfaces\IRegisterConnection.cs" />
     <Compile Include="Interfaces\IRegisterConnector.cs" />
     <Compile Include="Interfaces\IRegisterLocation.cs" />
     <Compile Include="Interfaces\IRegisterPassive.cs" />
+    <Compile Include="Interfaces\IRegisterPortActive.cs" />
+    <Compile Include="Interfaces\IRegisterPortPassive.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

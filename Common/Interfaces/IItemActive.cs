@@ -9,7 +9,11 @@ namespace Common.Interfaces
 {
     public interface  IItemActive : IItem
     {
-        IList<IPortActive> GetPortsList();
+        /// <summary>
+        /// Get the list of IDs of ports
+        /// </summary>
+        /// <returns></returns>
+        IList<int> GetPortsIDList();
 
         IError AddPort(IPortActive port);
 

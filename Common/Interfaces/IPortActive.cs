@@ -8,11 +8,11 @@ namespace Common.Interfaces
 {
     public interface IPortActive : IPort
     {
-        UInt64 Layer2Address  {get; set; }
+        string Layer2Address  {get; set; }
 
-        UInt32 Layer3Address  {get; set; }
+        string Layer3Address  {get; set; }
 
-        UInt64 MacAddress {get; set; }
+        string MacAddress {get; set; }
 
         /// <summary>
         /// TypeName has to be unique,

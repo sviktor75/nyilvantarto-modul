@@ -12,6 +12,8 @@ namespace Common.Interfaces
 
         string Name { get; set;}
 
+        ILocation Where { get; set; }
+
         int Number { get; set;}
 
         string Tag { get; set;}

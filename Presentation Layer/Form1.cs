@@ -26,12 +26,12 @@ namespace PresentationLayer
         public Form1()
         {
             FactorySupport factorySupport = new FactorySupport();
-            Log.Logger = new LoggerConfiguration().WriteTo.File("Log\\Log.txt", rollingInterval: RollingInterval.Hour).CreateLogger();
+            Log.Logger = new LoggerConfiguration().WriteTo.File(@"C:\Log\Log.txt", rollingInterval: RollingInterval.Hour).CreateLogger();
             Directory.CreateDirectory(@"C:\db");
             LiteRepository repo = new LiteRepository(ApplicationConfig.DbConnectionString);
 
             frameWork = factorySupport.Create(isMySQL, repo);
-
+            
             InitializeComponent();
         }
     }

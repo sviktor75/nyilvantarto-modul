@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Business_Layer.Interfaces
+namespace BusinessLayer.Interfaces
 {
     public interface IRegisterActive
     {
@@ -15,6 +15,6 @@ namespace Business_Layer.Interfaces
 
         IError Remove(IItemActive item);
 
-        IError RemoveByID(IItemActive item);
+        IError RemoveByID(int id);
     }
 }

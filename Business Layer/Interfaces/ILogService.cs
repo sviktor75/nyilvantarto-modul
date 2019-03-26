@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Serilog;
 
-namespace DataLayer
+namespace BusinessLayer.Interfaces
 {
-    class Program
+    public interface ILogService
     {
-        static void Main(string[] args)
-        {
-        }
+        void Create(string message);
     }
 }

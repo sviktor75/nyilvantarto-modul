@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Common.Interfaces;
 
 
-namespace Data_layer.Interfaces
+namespace DataLayer.Interfaces
 {
-    interface IDataService
+    public interface IDataService
     {
         IError InsertItemActive(IItemActive item);
 

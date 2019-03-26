@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Presentation_Layer.Properties
+namespace PresentationLayer.Properties
 {
 
 

@@ -19,8 +19,8 @@ namespace Common.Interfaces
 
         IError RemovePort(IPortActive port);
 
-        IError GetPortByID(IPortActive port);
+        IPortActive GetPortByID(int id);
 
-        IError RemovePortByID(IPortActive port);
+        IError RemovePortByID(int id);
     }
 }

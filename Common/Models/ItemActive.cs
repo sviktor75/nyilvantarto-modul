@@ -16,6 +16,8 @@ namespace Common.Models
         private string deviceName;
         private string notes;
 
+        // adatbázisból lekérni az eltárolt item id-ját
+        // ha id = 0, akkor el kell tárolni az adatbázisba
         int IItem.ID { get => id; } 
 
         int IItem.LocationID { get => locationID; set => locationID = value; }
@@ -30,7 +32,7 @@ namespace Common.Models
         string IItem.DeviceName
         {
             get => deviceName;
-            set => deviceID = value;
+            set => deviceName = value;
         }
         string IItem.Notes
         {

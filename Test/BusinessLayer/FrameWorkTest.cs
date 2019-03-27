@@ -33,7 +33,7 @@ namespace Test.BusinessLayer
         {
             //Arrange
             IItemActive item = new ItemActive();
-            item.Name = "akármi";
+            item.DeviceName = "akármi";
             var testObject = new FrameWork(dataService.Object, logService.Object, errorService.Object);
 
             //Act
@@ -42,6 +42,24 @@ namespace Test.BusinessLayer
 
             //Assert
             Assert.That(result, Is.EqualTo(item));
+        }
+        [Test]
+        public void Change_ItemName()
+        {
+            //Arrange
+            IItemActive item = new ItemActive();
+            item.DeviceName = "akarmi";
+            var testObject = new FrameWork(dataService.Object, logService.Object, errorService.Object);
+
+            //Act
+            testObject.AddItemActive(item);
+            IItemActive change = testObject.GetItemByID(item.ID);
+            change.DeviceName = "zsiraf";
+            IItemActive result = testObject.GetItemByID(item.ID);
+
+
+            //Assert
+            Assert.That(result.DeviceName, Is.EqualTo("zsiraf"));
         }
 
     }

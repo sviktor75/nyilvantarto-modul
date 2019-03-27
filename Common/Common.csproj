@@ -76,12 +76,13 @@
     <Compile Include="Interfaces\IPortActive.cs" />
     <Compile Include="Interfaces\IPortPassive.cs" />
     <Compile Include="Interfaces\ISymbol.cs" />
-    <Compile Include="Models\ConnectorType.cs" />
+    <Compile Include="Type\ConnectorType.cs" />
     <Compile Include="Models\Error.cs" />
     <Compile Include="Models\ItemActive.cs" />
-    <Compile Include="Models\LocationType.cs" />
-    <Compile Include="Models\PortTypeActive.cs" />
-    <Compile Include="Models\PortTypePassive.cs" />
+    <Compile Include="Type\LocationType.cs" />
+    <Compile Include="Type\PortTypeActive.cs" />
+    <Compile Include="Type\PortTypePassive.cs" />
+    <Compile Include="Models\PortActive.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -11,17 +11,15 @@ namespace Common.Interfaces
     {
         int ID { get; }
 
-        string Name {get; set;}
+        string DeviceID {get; set;} 
+
+        string DeviceName {get; set;}
         
         int LocationID  {get; set;}
 
         int SymbolID { get; set; }
 
-        string Remarks {get; set;}
-
-        bool IsWorking {get; set;}
-
-        bool IsError {get; set;}
+        string Notes {get; set;}
 
         /// <summary>
         /// Get the list of the IDs of connections

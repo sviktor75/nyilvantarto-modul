@@ -8,16 +8,18 @@ namespace Common.Interfaces
 {
     public interface IPort
     {
-        int ID { get;}
+        int ItemID { get; set; }
 
-        string Name { get; set;}
+        int PortNumber { get; set; }
 
-        bool IsWorking { get; set;}
+        string PortID { get; set; }
 
-        /// <summary>
-        /// if there is no connection,
-        /// than it is empty
-        /// </summary>
-        bool IsEmpty { get; set;}
+        string PortName { get; set; }
+
+        string PortPhysicalType { get; set; }
+
+        int SymbolID { get; set; }
+
+        string PhysicalLocation { get; set;}
     }
 }

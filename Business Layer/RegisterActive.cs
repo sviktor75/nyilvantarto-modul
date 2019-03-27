@@ -28,7 +28,7 @@ namespace BusinessLayer
             {
                 if (itemList.Count > 0)
                 {
-                return itemList.Where(x => x.ID == ID).FirstOrDefault();
+                    return itemList.Where(x => x.ID == ID).FirstOrDefault();
                 }
                 return null;
             }
@@ -68,6 +68,7 @@ namespace BusinessLayer
 
         IError IRegisterActive.Remove(IItemActive item)
         {
+            // TODO: van e connection
             if (itemList.Remove(item))
             {
             return Helpers.ErrorMessage(ErrorType.NoError);
@@ -81,6 +82,7 @@ namespace BusinessLayer
 
         IError IRegisterActive.RemoveByID(int id)
         {
+            // TODO: van e connection
             int index = GetIndex(id);
             if (index >= 0)
             {

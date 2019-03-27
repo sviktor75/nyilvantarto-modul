@@ -10,20 +10,33 @@ namespace Common.Models
     public class ItemActive : IItemActive
     {
         private int id;
-        private string name;
+        private int locationID;
+        private int symbolID;
+        private string deviceID;
+        private string deviceName;
+        private string notes;
 
-        public ItemActive()
-        {
-            id = Helpers.GenerateItemtID();
-        }
         int IItem.ID { get => id; } 
 
-        string IItem.Name { get => name; set => name = value; }
-        int IItem.LocationID { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        int IItem.SymbolID { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        string IItem.Remarks { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        bool IItem.IsWorking { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        bool IItem.IsError { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        int IItem.LocationID { get => locationID; set => locationID = value; }
+
+        int IItem.SymbolID { get => symbolID; set => symbolID = value; }
+
+        string IItem.DeviceID
+        {
+            get => deviceID;
+            set => deviceID = value;
+        }
+        string IItem.DeviceName
+        {
+            get => deviceName;
+            set => deviceID = value;
+        }
+        string IItem.Notes
+        {
+            get => notes;
+            set => notes = value;
+        }
 
         IError IItem.AddConnection(IConnection connection)
         {

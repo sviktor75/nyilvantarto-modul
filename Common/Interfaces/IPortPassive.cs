@@ -8,9 +8,6 @@ namespace Common.Interfaces
 {
     public interface IPortPassive : IPort
     {
-        /// <summary>
-        ///  has to be unique,
-        /// because it is index of PortTypePassive class
-        /// </summary>
+       IPortPassive Clone(int id);
     }
 }

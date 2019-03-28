@@ -9,7 +9,7 @@ namespace BusinessLayer.Interfaces
 {
     public interface IRegisterConnector
     {
-        IConnectorWall this[int ID] { get; set; }
+        IConnectorWall this[int ID] { get; }
 
         IError Add(IConnectorWall connector);
 

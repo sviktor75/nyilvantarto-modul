@@ -9,7 +9,7 @@ namespace BusinessLayer.Interfaces
 {
     public interface IRegisterConnection
     {
-        IConnection this[int ID] { get; set; }
+        IConnection this[int ID] { get; }
 
         IError Add(IConnection connection);
 

@@ -9,7 +9,7 @@ namespace BusinessLayer.Interfaces
 {
     public interface IRegisterSymbol
     {
-        ISymbol this[int ID] { get; set; }
+        ISymbol this[int ID] { get; }
 
         IError Add(ISymbol symbol);
 

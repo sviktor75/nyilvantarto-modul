@@ -32,30 +32,6 @@ namespace BusinessLayer
                 }
                 return null;
             }
-            set
-            {
-                if (itemList.Count > 0)
-                {
-                    int index = GetIndex(ID);
-                    if (index >= 0)
-                    {
-                    ReplaceItem(value, index);
-                    }
-                }
-            }
-        }
-
-        private int GetIndex(int ID)
-        {
-            return itemList.IndexOf(itemList.Where(x => x.ID == ID).FirstOrDefault());
-        }
-
-        private void ReplaceItem(IItemActive value, int index)
-        {
-            // TODO hibakezelés, ellenőrizni, megfelelő értékeket tartalmaz
-            // a ItemActive
-            itemList.RemoveAt(index);
-            itemList.Add(value);
         }
 
         IError IRegisterActive.Add(IItemActive item)

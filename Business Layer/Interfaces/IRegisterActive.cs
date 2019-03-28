@@ -9,7 +9,7 @@ namespace BusinessLayer.Interfaces
 {
     public interface IRegisterActive
     {
-        IItemActive this[int ID] { get; set; }
+        IItemActive this[int ID] { get; }
 
         IError Add(IItemActive item);
 

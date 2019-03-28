@@ -14,5 +14,7 @@ namespace Common.Interfaces
         string Name { get; }
 
         Image Image { get; set; }
+
+        ISymbol Clone(int id);
     }
 }

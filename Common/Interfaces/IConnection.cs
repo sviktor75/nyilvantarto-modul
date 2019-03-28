@@ -20,5 +20,7 @@ namespace Common.Interfaces
 
         int DestinationPortID { get; set; }
 
+        IConnection Clone(int id);
+
     }
 }

@@ -22,5 +22,7 @@ namespace Common.Interfaces
         IPortActive GetPortByID(int id);
 
         IError RemovePortByID(int id);
+
+        IItemActive Clone(int id);
     }
 }

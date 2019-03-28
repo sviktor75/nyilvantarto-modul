@@ -9,7 +9,7 @@ namespace BusinessLayer.Interfaces
 {
     public interface IRegisterPortPassive
     {
-        IPortPassive this[int ID] { get; set; }
+        IPortPassive this[int ID] { get; }
 
         IError Add(IPortPassive port);
 

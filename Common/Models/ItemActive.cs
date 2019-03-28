@@ -50,6 +50,11 @@ namespace Common.Models
             throw new NotImplementedException();
         }
 
+        IItemActive IItemActive.Clone(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         IConnection IItem.GetConnectionByID(int id)
         {
             throw new NotImplementedException();

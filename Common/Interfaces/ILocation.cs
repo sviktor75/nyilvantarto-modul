@@ -36,5 +36,7 @@ namespace Common.Interfaces
         IError AddChild(ILocation child);
 
         IError RemoveChild(ILocation child);
+
+        ILocation Clone(int id);
     }
 }

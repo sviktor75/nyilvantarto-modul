@@ -13,5 +13,7 @@ namespace Common.Interfaces
         string IPAddress  {get; set; }
 
         string MacAddress {get; set; }
+
+        IPortActive Clone(int id);
     }
 }

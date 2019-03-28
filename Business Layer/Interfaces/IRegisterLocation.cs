@@ -9,7 +9,7 @@ namespace BusinessLayer.Interfaces
 {
     public interface IRegisterLocation
     {
-        ILocation this[int ID] { get; set; }
+        ILocation this[int ID] { get; }
 
         IError Add(ILocation location);
 

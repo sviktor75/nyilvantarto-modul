@@ -71,5 +71,10 @@ namespace Common
             get => physicalLocation;
             set => physicalLocation = value;
         }
+
+        IPortActive IPortActive.Clone(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

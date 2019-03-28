@@ -37,5 +37,7 @@ namespace Common.Interfaces
         int ParentLocationID { get; set;}
 
         int SymbolID { get; set;}
+
+        IConnectorWall Clone(int id);
     }
 }
